@@ -8,6 +8,8 @@ var box1, pig1;
 
 var slingshot,log6;
 
+var score=0;
+
 function preload(){
     bg=loadImage("sprites/bg.png")
 }
@@ -66,6 +68,14 @@ function draw(){
     bird.display(); 
 
     slingshot.display()
+
+    stroke('blue')
+    strokeWeight(2);
+    text("SCORE:"+score ,800,50)
+
+    pig1.score();
+
+    pig3.score();
 
     platform.display();
 }
