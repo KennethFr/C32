@@ -87,6 +87,7 @@ function mouseReleased(){
 }
 function keyPressed(){
     if (keyCode===32){
+        bird.tragectory=[];
         slingshot.attach(bird.body)
     }
 }
